@@ -19,3 +19,33 @@ function onFormInput() {
 
     localStorage.setItem(STORAGE_KEY, JSON.stringify(formData));
 }
+
+onPageReload();
+
+function onPageReload() {
+    const savedMessage = JSON.parse(localStorage.getItem(STORAGE_KEY));
+    if (savedMessage) {
+        emailEl.value = savedMessage.email;
+        messageEl.value = savedMessage.message;
+    }
+}
+
+form.addEventListener('submit', onFormSubmit);
+
+function onFormSubmit(e) {
+    e.preventDefault();
+    const email = emailEl.value;
+    const message = messageEl.value;
+
+    if (email == '' || message == '') {
+        alert('Enter both input!');
+        form.reset();
+        return;
+    }
+
+    const formData = { email, message };
+    console.log(formData);
+    form.reset();
+
+    localStorage.removeItem(STORAGE_KEY);
+}
