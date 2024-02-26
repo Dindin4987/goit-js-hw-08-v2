@@ -2,20 +2,20 @@
   "name": "parcel-project-template",
   "version": "2.0.0",
   "description": "",
-  "homepage": "https://Dindin4987.github.io/goit-js-hw-08",
+  "homepage": "https://Dindin4987.github.io/goit-js-hw-08-v2",
   "scripts": {
     "start": "parcel src/*.html",
-    "build": "parcel build src/*.html --public-url /parcel-project-template/"
+    "build": "parcel build src/*.html --public-url /pgoit-js-hw-08-v2/"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Dindin4987/goit-js-hw-08.git"
+    "url": "git+https://github.com/Dindin4987/goit-js-hw-08-v2"
   },
   "keywords": [],
   "author": "Geraldine Mailla <dindinmailla4987@gmail.com>",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/Dindin4987/goit-js-hw-08/issues"
+    "url": "https://github.com/Dindin4987/goit-js-hw-08-v2/issues"
   },
   "dependencies": {
     "@vimeo/player": "^2.21.0",
